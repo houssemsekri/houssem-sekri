@@ -1,0 +1,114 @@
+:root {
+  --color-blue-light: #068bf4;
+  --color-blue-dark-1: #235f9a;
+  --color-blue-dark-2: #013161;
+  --color-blue-dark-3: #013366;
+  --color-border: #007bff;
+  --color-blue: #068bf4;
+  --color-grey-dark: rgb(236, 234, 234);
+
+  --color-white: rgb(236, 234, 234);
+  --color-black: black;
+}
+$color-blue-light: var(--color-blue-light);
+$color-blue-dark-1: var(--color-blue-dark-1);
+$color-blue-dark-2: var(--color-blue-dark-2);
+$color-blue-dark-3: var(--color-blue-dark-3);
+$color-border: var(--color-border);
+$color-blue: var(--color-blue);
+$color-grey-dark: var(--color-grey-dark);
+
+$color-white: var(--color-white);
+$color-black: var(--color-black);
+//font #1b1f2f
+$default-font-size: 1.6rem;
+// border
+$default-border: solid 0.2rem $color-blue-dark-1;
+$border-2: solid 0.07rem $color-blue-dark-1;
+$border-btn: solid 0.25rem $color-blue-dark-1;
+$border-btn-2: solid 0.25rem $color-blue-light;
+
+$bp-smallest: 25em;
+$bp-small-m: 32rem;
+$bp-small: 43.25em;
+$bp-md-s: 70.13em;
+$bp-md-l: 86em;
+.progress {
+  max-width: 30rem;
+  height: 5px;
+  width: 80%;
+  background-color: $color-blue-dark-1;
+  position: relative;
+  margin-bottom: 3rem;
+  z-index: -1;
+  border-radius: 5000000px;
+}
+.progress-bar {
+  position: absolute;
+  background-color: $color-blue;
+  width: 0.5%;
+  top: 0;
+  left: 0;
+  height: 5px;
+  border-radius: 5000000px;
+}
+.card__icon2 {
+  @media (max-width: $bp-small-m) {
+    border: none;
+    height: auto;
+    width: auto;
+  }
+}
+.heading__primary__span {
+  @media (max-width: $bp-small-m) {
+    display: block !important;
+  }
+}
+.heading__primary {
+  @media (max-width: $bp-small-m) {
+    padding: 0.5rem;
+  }
+}
+.dark {
+  margin-top: 2rem;
+  div {
+    background-color: $color-blue-dark-1;
+  }
+  .light,
+  .d {
+    display: inline-block;
+
+    border-radius: 500000px;
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+}
+
+.d {
+  width: 50%;
+  background-color: red !important;
+}
+.light {
+  width: 50%;
+  background-color: green !important;
+}
+.main__decoration__ligne {
+  opacity: 0.5;
+}
+.card__icon2 {
+  @media (max-width: $bp-small-m) {
+    width: auto !important;
+    height: auto !important;
+    border: none !important;
+  }
+}
+.project__photo,
+.about__photo {
+  min-height: 200px !important;
+  object-fit: cover !important;
+  background: rgba(255, 255, 255, 0.123);
+  @media (min-width: $bp-md-l) {
+    min-height: 250px !important;
+  }
+}
